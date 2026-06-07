@@ -14,6 +14,7 @@
       --bg-card: #141414;
       --text-main: #e6e6e6;
       --text-muted: #a0a0a0;
+      --highlight: #ffd700; /* Goud voor de hoofdboeking */
     }
 
     body {
@@ -28,8 +29,8 @@
     }
 
     header {
-      background-color: #000;
-      padding: 40px 20px;
+      background-color: transparent; /* Transparant gemaakt zodat de verloopachtergrond doorloopt */
+      padding: 50px 20px 40px 20px;
       text-align: center;
       border-bottom: 3px solid var(--primary);
     }
@@ -39,7 +40,9 @@
       width: 85%;
       height: auto;
       margin-bottom: 15px;
-      filter: drop-shadow(0 0 10px rgba(240, 78, 48, 0.3));
+      /* mix-blend-mode filtert de zwarte achtergrond van het logo weg */
+      mix-blend-mode: screen; 
+      filter: drop-shadow(0 0 15px rgba(240, 78, 48, 0.4));
     }
 
     header p {
@@ -172,6 +175,33 @@
       align-items: center;
     }
 
+    /* Styling voor de Hoofdboeking (Gentse Feesten) */
+    ul.agenda-list li.main-gig {
+      background: linear-gradient(90deg, #221a00 0%, var(--bg-card) 100%);
+      border: 1px solid var(--highlight);
+      border-left: 6px solid var(--highlight);
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.15);
+    }
+
+    ul.agenda-list li.main-gig .gig-title {
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
+    }
+
+    .badge-main {
+      background-color: var(--highlight);
+      color: #000;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 0.75em;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-left: 10px;
+      display: inline-block;
+    }
+
     /* Referenties Grid */
     .ref-grid {
       display: grid;
@@ -293,21 +323,24 @@
 
   <section id="bio">
     <h2>Over DJ LNNY</h2>
-    <p>De passie voor het draaien begon in 2017. In 2021 kreeg DJ LNNY zijn eerste kans om te draaien in een Gentse club genaamd Pi-Nuts. Hier werd hij al snel opgemerkt en aangenomen als resident DJ. Voorheen draaide hij enkel op kleinere feestjes en dj-contests, maar zijn overstap naar het clubleven betekende een grote sprong. Dankzij positieve feedback bleef hij groeien en werd hij uitgenodigd door andere clubs, cafés, fuiven, festivals, privé-events, ...</p>
-    <p>Tijdens het academiejaar vind je hem wekelijks meermaals terug in de Overpoort te Gent, buiten het academiejaar kan je hem op verschillende events, clubs of cafés vinden. DJ LNNY draait meestal All-nighters en beschikt dus over een breed scala aan genres: van zwoele beats tot hardstyle, van rock tot schlagers niets is hem teveel. Zijn favorieten? White girl music, songs uit de 10s, hedendaagse uitgaansmuziek. Ook voelt hij zich helemaal thuis in de rawstyle scene. Daarnaast maakt hij ook mashups en edits die te beluisteren zijn en men gratis kan downloaden via SoundCloud.</p>
+    <p>Sinds de start van zijn carrière in 2017 heeft Lennert Loones, beter bekend als DJ LNNY, een ijzersterke reputatie opgebouwd in de Vlaamse partyscene. Wat begon op lokale events en dj-contests, groeide in 2021 snel uit tot het grotere werk toen hij werd binnengehaald als resident DJ in de Gentse club Pi-Nuts. Die overstap naar het clubleven bleek de perfecte springplank. Dankzij zijn energieke stijl en feilloze publieksaanvoeling is hij inmiddels een veelgevraagde naam in clubs, legendarische feestcafés, op festivals en high-end privé-events.</p>
+    
+    <p>Tijdens het academiejaar trekt DJ LNNY wekelijks de Overpoort in Gent volledig op gang, terwijl hij in het weekend te vinden is in meerdere clubs of events. In de zomer van 2026 bereikt hij een absolute mijlpaal: een felbegeerde spot op het hoofdpodium van de Gentse Feesten op Camping Vlasmarkt.</p>
+    
+    <p>Als rasechte all-rounder heeft DJ LNNY zich gespecialiseerd in het draaien van 'all-nighters'. Van zwoele clubbeats tot hardstyle, en van pop/rock classics tot ultieme meezingers: niets is hem te veel. Zijn absolute handelsmerk? Energieke sets vol white girl music, de grootste hits uit de 10s & 20s en hedendaagse uitgaansmuziek, vloeiend gemixt met eigen, unieke mashups en edits. Die creativiteit trekt hij ook door naar de hardere stijlen, waarbij hij zich volledig thuis voelt in de rawstyle scene. DJ LNNY brengt de dynamiek van de beste clubs rechtstreeks naar jouw dansvloer.</p>
   </section>
 
   <section id="mixes">
-    <h2>Mixes</h2>
-    <p>Je kunt mijn mashups en edits beluisteren of direct downloaden via SoundCloud en VI.BE.</p>
+    <h2>Mixes & Edits</h2>
+    <p>Naast het live mixen achter de decks, kruipt DJ LNNY ook regelmatig de studio in voor het maken van eigen mashups en exclusieve edits. Je kunt zijn meest recente mixtapes, bootlegs en edits beluisteren of gratis downloaden via SoundCloud en VI.BE.</p>
     <p><em>Opmerking: Wegens auteursrechten op SoundCloud zijn de meest recente live-mixes hoofdzakelijk te vinden op het VI.BE platform.</em></p>
     
     <div class="mix-container">
       <div class="mix-btn">
-        <a href="https://soundcloud.com/dj_lnny" target="_blank" rel="noopener noreferrer">SoundCloud Profile</a>
+        <a href="https://soundcloud.com/dj_lnny" target="_blank" rel="noopener noreferrer">Luister op SoundCloud</a>
       </div>
       <div class="mix-btn">
-        <a href="https://vi.be/platform/LNNY" target="_blank" rel="noopener noreferrer">VI.BE Platform</a>
+        <a href="https://vi.be/platform/LNNY" target="_blank" rel="noopener noreferrer">Ontdek op VI.BE</a>
       </div>
     </div>
   </section>
@@ -324,7 +357,7 @@
       <li>Zaterdag 4 juli - Privé</li>
       <li>Vrijdag 10 juli - Dj Contest Dance Festival Middelkerke, Mats Beachbar</li>
       <li>Zaterdag 18 juli - Jeugdhuis Kernelle, Dentergem</li>
-      <li>Woensdag 22 juli - GENTSE FEESTEN, CAMPING VLASMARKT 00U-1U</li>
+      <li class="main-gig"><span class="gig-title">Woensdag 22 juli - GENTSE FEESTEN, CAMPING VLASMARKT (00U-01U)</span> </span></li>
       <li>Zaterdag 15 augustus - TBA</li>
     </ul>
   </section>
