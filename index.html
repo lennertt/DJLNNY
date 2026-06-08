@@ -6,6 +6,11 @@
   <title>DJ LNNY - Officiële Website | Mixes, Agenda & Contact</title>
   <meta name="description" content="Officiële website van DJ LNNY, de all-round club & festival DJ (Resident Overpoort Gent, Gentse Feesten Vlasmarkt). Beluister mixes, bekijk de live agenda en boek DJ LNNY direct." />
   <meta name="keywords" content="DJ LNNY, DJ lenny, DJ gezocht België, DJ gezocht West-Vlaanderen, DJ gezocht Oost-Vlaanderen, Overpoort Gent, Vlasmarkt Gentse Feesten, studentenfeest, festival DJ, DJ boeken, lennert loones" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="DJ LNNY - De perfecte match voor jouw event!" />
+  <meta property="og:description" content="Officiële website van DJ LNNY, de all-round club & festival DJ. Beluister mixes, bekijk de live agenda en boek DJ LNNY direct." />
+  <meta property="og:image" content="Dia1.PNG" />
+  <meta property="og:type" content="website" />
   <style>
     :root {
       --primary: #f04e30;
@@ -14,7 +19,7 @@
       --bg-card: #141414;
       --text-main: #e6e6e6;
       --text-muted: #a0a0a0;
-      --highlight: #ffd700; /* Goud voor de hoofdboeking */
+      --highlight: #ffd700;
     }
 
     body {
@@ -24,12 +29,12 @@
       box-shadow: inset 0 0 40px rgba(240, 78, 48, 0.15);
       color: var(--text-main);
       min-height: 100vh;
-      scroll-behavior: smooth;
+      /* scroll-behavior removed — smooth scroll handled entirely by JS so nav offset works correctly */
       line-height: 1.6;
     }
 
     header {
-      background-color: transparent; /* Transparant gemaakt zodat de verloopachtergrond doorloopt */
+      background-color: transparent;
       padding: 50px 20px 40px 20px;
       text-align: center;
       border-bottom: 3px solid var(--primary);
@@ -40,8 +45,7 @@
       width: 85%;
       height: auto;
       margin-bottom: 15px;
-      /* mix-blend-mode filtert de zwarte achtergrond van het logo weg */
-      mix-blend-mode: screen; 
+      mix-blend-mode: screen;
       filter: drop-shadow(0 0 15px rgba(240, 78, 48, 0.4));
     }
 
@@ -110,7 +114,6 @@
       margin-bottom: 20px;
     }
 
-    /* Mixes Section Styling */
     .mix-container {
       display: flex;
       gap: 20px;
@@ -142,7 +145,6 @@
       display: block;
     }
 
-    /* Agenda Styling */
     .agenda-status {
       display: inline-block;
       background: rgba(240, 78, 48, 0.1);
@@ -175,7 +177,6 @@
       align-items: center;
     }
 
-    /* Styling voor de Hoofdboeking (Gentse Feesten) */
     ul.agenda-list li.main-gig {
       background: linear-gradient(90deg, #221a00 0%, var(--bg-card) 100%);
       border: 1px solid var(--highlight);
@@ -189,7 +190,6 @@
       text-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
     }
 
-    /* Referenties Grid */
     .ref-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -220,7 +220,6 @@
       margin-bottom: 0;
     }
 
-    /* Contact Button */
     .cta-btn {
       display: inline-block;
       background-color: var(--primary);
@@ -241,7 +240,6 @@
       box-shadow: 0 6px 20px rgba(240, 78, 48, 0.5);
     }
 
-    /* Footer Elements */
     footer {
       text-align: center;
       padding: 40px 20px;
@@ -274,7 +272,6 @@
       letter-spacing: 0.5px;
     }
 
-    /* Responsive Handling */
     @media (max-width: 768px) {
       nav {
         padding: 10px 0;
@@ -313,9 +310,7 @@
   <section id="bio">
     <h2>Over DJ LNNY</h2>
     <p>Sinds de start van zijn carrière in 2017 heeft Lennert Loones, beter bekend als DJ LNNY, een ijzersterke reputatie opgebouwd in de Vlaamse partyscene. Wat begon op lokale events en dj-contests, groeide in 2021 snel uit tot het grotere werk toen hij werd binnengehaald als resident DJ in de Gentse club Pi-Nuts. Die overstap naar het clubleven bleek de perfecte springplank. Dankzij zijn energieke stijl en feilloze publieksaanvoeling is hij inmiddels een veelgevraagde naam in clubs, legendarische feestcafés, op festivals en high-end privé-events.</p>
-    
     <p>Tijdens het academiejaar trekt DJ LNNY wekelijks de Overpoort in Gent volledig op gang, terwijl hij in het weekend te vinden is in meerdere clubs of events. In de zomer van 2026 bereikt hij een absolute mijlpaal: een felbegeerde spot op het hoofdpodium van de Gentse Feesten op Camping Vlasmarkt.</p>
-    
     <p>Als rasechte all-rounder heeft DJ LNNY zich gespecialiseerd in het draaien van 'all-nighters'. Van zwoele clubbeats tot hardstyle, en van pop/rock classics tot ultieme meezingers: niets is hem te veel. Zijn absolute handelsmerk? Energieke sets vol white girl music, de grootste hits uit de 10s & 20s en hedendaagse uitgaansmuziek, vloeiend gemixt met eigen, unieke mashups and edits. Die creativiteit trekt hij ook door naar de hardere stijlen, waarbij hij zich volledig thuis voelt in de rawstyle scene. DJ LNNY brengt de dynamiek van de beste clubs rechtstreeks naar jouw dansvloer.</p>
   </section>
 
@@ -323,7 +318,6 @@
     <h2>Mixes & Edits</h2>
     <p>Naast het live mixen achter de decks, kruipt DJ LNNY ook regelmatig de studio in voor het maken van eigen mashups en exclusieve edits. Je kunt zijn meest recente mixtapes, bootlegs en edits beluisteren of gratis downloaden via SoundCloud en VI.BE.</p>
     <p><em>Opmerking: Wegens auteursrechten op SoundCloud zijn de meest recente live-mixes hoofdzakelijk te vinden op het VI.BE platform.</em></p>
-    
     <div class="mix-container">
       <div class="mix-btn">
         <a href="https://soundcloud.com/dj_lnny" target="_blank" rel="noopener noreferrer">Luister op SoundCloud</a>
@@ -337,8 +331,7 @@
   <section id="agenda">
     <h2>Agenda</h2>
     <div class="agenda-status">Wordt wekelijks geüpdatet</div>
-    
-    <ul class="agenda-list">  
+    <ul class="agenda-list">
       <li>Zaterdag 13 juni - Astor, Ieper</li>
       <li>Vrijdag 19 juni - Astor, Ieper</li>
       <li>Vrijdag 26 juni - Zeppos, Vlasmarkt Gent</li>
@@ -354,28 +347,23 @@
   <section id="referenties">
     <h2>Referenties</h2>
     <p>DJ LNNY bracht het feest naar een hoger niveau op onder andere de volgende locaties:</p>
-
     <div class="ref-grid">
       <div class="ref-card">
         <h3>Festivals</h3>
         <p>Dranouter festival, Koekeloeren festival, Volksfeesten Moorsel, Frietrock Ieper</p>
       </div>
-      
       <div class="ref-card">
         <h3>Overpoort Gent</h3>
         <p>Luxx, Delirium, Confrater, Pallieter, Porter House, Pere Total, Vagant, Delta, TamTam</p>
       </div>
-      
       <div class="ref-card">
         <h3>Cafés & Uitgaan</h3>
-        <p>Pi-Nuts Gent, Zeppos Vlasmarkt Gent, Abacho silent disco Gent, Anton XL by Ray Winterfeesten Gent, ZwartWit Gent (Turbo Gantoise), Vagant Roeselare, Bar Canard Roeselare, Bistro Botanique Roeselare, D’hespe Tielt, ‘t Fonteintje Ruiselede, Illuzion Kortrijk, Bar Lionel Wevelgem, The Possé Oostduinkerke, Dinos Knokke, Charlies Ieper, Astor Ieper, Winterbar barski Ieper, Kerstmarkt buxushoeve Ieper, Bistro De Stadsschaal Poperinge, Per Tutti Lier</p>
+        <p>Pi-Nuts Gent, Zeppos Vlasmarkt Gent, Abacho silent disco Gent, Anton XL by Ray Winterfeesten Gent, ZwartWit Gent (Turbo Gantoise), Vagant Roeselare, Bar Canard Roeselare, Bistro Botanique Roeselare, D'hespe Tielt, 't Fonteintje Ruiselede, Illuzion Kortrijk, Bar Lionel Wevelgem, The Possé Oostduinkerke, Dinos Knokke, Charlies Ieper, Astor Ieper, Winterbar barski Ieper, Kerstmarkt buxushoeve Ieper, Bistro De Stadsschaal Poperinge, Per Tutti Lier</p>
       </div>
-      
       <div class="ref-card">
         <h3>Jeugdhuizen</h3>
         <p>Kernelle Dentergem, Jh De Troubadour Torhout, Jh Flodder Langemark-Poelkapelle, JOC Ieper, JOC Dadizele</p>
       </div>
-
       <div class="ref-card">
         <h3>Studenten & Privé</h3>
         <p>Events van verschillende studentenverenigingen in Gent, Brussel en Brugge. Tal van privé-events (Sweet 16/18, bedrijfsevenementen, sportevenementen, huwelijken) en diverse openbare fuiven.</p>
@@ -409,11 +397,29 @@
         </svg>
       </a>
     </div>
-    <p>© <script>document.write(new Date().getFullYear());</script> DJ LNNY - Alle rechten voorbehouden</p>
+    <!-- Fix 1: year set via textContent instead of document.write -->
+    <p>© <span id="year"></span> DJ LNNY - Alle rechten voorbehouden</p>
     <span class="vat-number">Ondernemingsnummer: BE0789728864</span>
   </footer>
 
   <script>
+    // Fix 1: Set year via textContent — no more document.write
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Fix 2: Smooth scroll fully in JS (with nav offset), scroll-behavior removed from CSS body
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetID = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetID);
+        if (targetElement) {
+          const navHeight = document.querySelector('nav').offsetHeight;
+          const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
+          window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+        }
+      });
+    });
+
     // Fade-in animatie bij scroll
     const sections = document.querySelectorAll('section');
     const observer = new IntersectionObserver(entries => {
@@ -425,27 +431,7 @@
       });
     }, { threshold: 0.1 });
 
-    sections.forEach(section => {
-      observer.observe(section);
-    });
-
-    // Smooth scroll support voor alle browsers
-    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetID = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetID);
-        if (targetElement) {
-          const navHeight = document.querySelector('nav').offsetHeight;
-          const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
-          
-          window.scrollTo({
-            top: targetPosition,
-            behavior: 'smooth'
-          });
-        }
-      });
-    });
+    sections.forEach(section => observer.observe(section));
   </script>
 
 </body>
